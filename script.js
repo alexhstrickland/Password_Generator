@@ -1,12 +1,16 @@
+// Character types
 var lower = "abcdefghijklmnopqrstuvwxyz"
+
 var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
 var num = "0123456789"
+
 var special = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
 
 // Prompts for criteria
-
 var length = prompt("Please type a numerical value between 8 and 128 for the password length:");
 
+// If statement to validate password length is between 8 and 128
 if (length <8 || length > 128) {
   alert("The passcode length must be between 8 and 128. Please refresh page and start over!");
 }
@@ -21,12 +25,15 @@ var numeric = confirm("Would you like the password to include numeric characters
 
 var specialCharacters = confirm("Would you like the password to include special characters?");
 
+// Code to validate that user selected criteria
 if ((lowercase === false) && (uppercase === false) && (numeric === false) && (specialCharacters === false)) {
   alert("You have not selected any criteria. Please refresh and start over!");
 }
 
-characters = ""
+// Creation of blank character variable
+var characters = ""
 
+// If statements to add selected criteria to characters
 if (lowercase === true) {
   characters += lower;
 }
@@ -45,13 +52,8 @@ if (specialCharacters === true) {
 
 console.log(characters);
 
-
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-
-
-
-
 
 // Generate Password
 function generatePassword() {

@@ -1,12 +1,3 @@
-// Character types
-var lower = "abcdefghijklmnopqrstuvwxyz"
-
-var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-
-var num = "0123456789"
-
-var special = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
-
 // Prompts for criteria
 var length = prompt("Please type a numerical value between 8 and 128 for the password length:");
 
@@ -32,6 +23,15 @@ if ((lowercase === false) && (uppercase === false) && (numeric === false) && (sp
 
 // Creation of blank character variable
 var characters = ""
+
+// Character types
+var lower = "abcdefghijklmnopqrstuvwxyz"
+
+var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+var num = "0123456789"
+
+var special = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
 
 // If statements to add selected criteria to characters
 if (lowercase === true) {

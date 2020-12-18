@@ -18,6 +18,7 @@ function generatePassword() {
   // If statement to validate password length is between 8 and 128
   if (length <8 || length > 128) {
     alert("The passcode length must be between 8 and 128. Please refresh page and start over!");
+    return;
   }
   
   // Prompts for criteria
